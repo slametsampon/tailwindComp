@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Overlay</title>
+    <link href="../css/output.css" rel="stylesheet" />
+  </head>
+  <body class="h-screen flex items-center justify-center bg-gray-100">
+    <!-- Card dengan Gambar -->
+    <div class="relative w-80 h-64 rounded-lg shadow-md overflow-hidden">
+      <img
+        src="https://via.placeholder.com/320x240"
+        width="300"
+        alt="Gambar"
+        class="w-full h-full object-cover"
+      />
+
+      <!-- Overlay Absolute -->
+      <div
+        class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-xl font-bold"
+      >
+        Overlay Konten
+      </div>
+    </div>
+  </body>
+</html>
