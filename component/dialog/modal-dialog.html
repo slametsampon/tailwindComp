@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Dialog</title>
+    <link href="../css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button
+      onclick="openModal()"
+      class="px-4 py-2 text-white bg-green-600 rounded hover:bg-green-700"
+    >
+      Buka Modal
+    </button>
+    <div
+      id="myModal"
+      class="fixed inset-0 z-50 hidden overflow-y-auto bg-black bg-opacity-50"
+    >
+      <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white rounded-lg shadow-lg w-full max-w-md p-6">
+          <h2 class="text-xl font-semibold">Judul Modal</h2>
+          <p class="mt-4 text-gray-600">Ini adalah konten modal dialog.</p>
+          <div class="mt-6 flex justify-end">
+            <button
+              id="closeModal"
+              class="px-4 py-2 text-white bg-blue-600 rounded hover:bg-blue-700"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hubungkan File JavaScript -->
+    <script src="modal-dialog.js" defer></script>
+  </body>
+</html>
