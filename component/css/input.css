@@ -1,3 +1,26 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tambahkan class custom di @layer components */
+@layer components {
+  /* Tombol Kustom */
+  .btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700;
+  }
+
+  .btn-cancell {
+    @apply bg-red-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-700;
+  }
+
+  /* Kartu Kustom */
+  .card {
+    @apply p-3 bg-green-400 shadow-lg rounded-lg;
+  }
+
+  /* Header Kustom */
+  .header-title {
+    @apply text-2xl font-bold text-gray-800;
+  }
+}
